@@ -1,0 +1,25 @@
+package com.Evergent.CoreJAVA.abstract1;
+
+public class ProductImpl extends Product {
+
+	public void newProduct() {
+		System.out.println("Abstract Method");
+	}
+	
+	public void show() {
+		System.out.println("Local Method");
+	}
+	public static void main(String[] args) {
+
+		ProductImpl p1 = new ProductImpl();
+		p1.show();
+		p1.newProduct();
+		p1.allProduct();
+		
+		Product p2 = new ProductImpl();
+		p2.newProduct();
+		p2.allProduct();
+		
+	}
+
+}
